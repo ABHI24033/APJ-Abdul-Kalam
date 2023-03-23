@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+One&family=Mulish:ital,wght@0,300;1,200&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@400;500&family=Prompt:ital,wght@1,100&family=Ubuntu:ital@1&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.full_body{
+    border: 5px solid black;
+    padding: 100px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    background-color: cadetblue;
+    /*width: 100%;*/
+}
+header{
+    display: flex;
+    margin-left: 10%;
+    width: 50%;
+    margin: auto;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.name{
+    line-height: 0%;
+}
+.name>h4{
+    text-align: end;
+}
+.img>img{
+    border-radius: 50px ;
+}
+
+/* =======================main section=====================  */
+main>section>h3{
+    font-size: 30px;
+    line-height: 1px;
+    font-family: 'Ubuntu', sans-serif;;
+}
+main>section>p{
+    font-size: larger;
+    /* font-kerning: inherit; */
+    font-family: sans-serif;
+}
+main>section>p>span,b{
+    color: red;
+    text-decoration: underline;
+    font-style: italic;
+}
+/* ===================Footer section=========================== */
+
+.footer{
+    background-color: cadetblue;
+    height: 30px;
+    text-align: center;
+    padding-top:-20px;
+    font-size: 20px;
+}
+/* =======================responsive display================= */
+ @media screen and (max-width:1190px) {
+    header{
+        display: grid;
+    }
+ }
+ @media screen and (max-width:775px) {
+    .full_body{
+        padding: 30px;
+    }
+    header{
+        display: inline;
+        
+    }
+    .name>h4{
+        text-align: center;
+    }
+ }
+
+
+ @media screen and (max-width:500px) {
+    .full_body{
+        padding: 10px;
+    }
+    
+    
+    .name>h4{
+        text-align: center;
+    }
+ }
+
+ @media screen and (max-width:340px) {
+    .full_body{
+        padding: 10px;
+    }
+    .name>h4{
+        text-align: center;
+    }
+    h1{
+        font-size: large;
+    }
+    main>section>h3{
+
+        font-size: larger;
+        font-weight: 900;
+    }
+    main>section>p{
+        font-size: large;
+    }
+ }
+
+ @media screen and (max-width:200px) {
+    .full_body{
+        padding: 10px;
+    }
+    .name>h4{
+        text-align: center;
+    }
+    h1{
+        font-size: large;
+    }
+    .img>img{
+        width: 50%;
+    }
+    main>section>h3{
+        font-size: small;
+        font-weight: 900;
+    }
+    main>section>p{
+        font-size: small;
+    }
+ }
